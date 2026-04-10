@@ -419,13 +419,13 @@ body{cursor:auto!important}
 #G .vsec::after{display:none}
 #G .vsec>*{position:relative;z-index:1}
 
-#G .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+#G .vgrid{display:grid;grid-template-columns:repeat(3,1fr);
   gap:0;margin-bottom:28px}
 #G .vc{background:var(--wh);overflow:hidden;
   border:1px solid rgba(20,18,16,0.07);border-top:none;border-left:none;
   transition:box-shadow .45s,transform .45s cubic-bezier(.22,1,.36,1)}
-#G .vgrid .vc:nth-child(-n+7){border-top:1px solid rgba(20,18,16,0.07)}
-#G .vgrid .vc:nth-child(7n+1){border-left:1px solid rgba(20,18,16,0.07)}
+#G .vgrid .vc:nth-child(-n+3){border-top:1px solid rgba(20,18,16,0.07)}
+#G .vgrid .vc:nth-child(3n+1){border-left:1px solid rgba(20,18,16,0.07)}
 #G .vc:hover{box-shadow:0 12px 44px rgba(12,11,9,.09);
   transform:translateY(-4px);position:relative;z-index:1}
 
@@ -947,7 +947,7 @@ body{cursor:auto!important}
   #G .lsec .pi{ aspect-ratio:1/1; padding:10px }
 
   /* ── Volailles ── */
-  #G .vgrid{ grid-template-columns:1fr 1fr }
+  #G .vgrid{ grid-template-columns:repeat(3,1fr) }
   #G .vi{ padding:10px }
   #G .vb{ padding:10px 12px 14px }
   #G .vn{ font-size:11px; letter-spacing:1px; line-height:1.4 }
